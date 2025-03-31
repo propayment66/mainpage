@@ -173,6 +173,8 @@
     </style>
 </head>
 <body>
+    <div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
 
 <header>
     <span class="menu-btn" onclick="toggleSidebar()">☰</span>
@@ -213,9 +215,11 @@
     <p>&copy; 2025 ProPayment Technology Pvt. Ltd.</p>
 </footer>
 
-<script>
-    function toggleSidebar() {
-        document.getElementById('sidebar').classList.toggle('open');
+        <script>
+    function closeSidebar() {
+        document.getElementById('sidebar').classList.remove('open');
+        document.getElementById('overlay').classList.remove('active');
+    
     }
 </script>
 
